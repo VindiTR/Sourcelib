@@ -188,7 +188,7 @@ function SourceUpdater:__init(scriptName, version, host, updatePath, filePath, v
     self.getVersion = function(version) return tonumber(string.match(version or "", "%d+%.?%d*")) end
 
     self.UPDATE_SCRIPT_NAME = scriptName
-    self.UPDATE_HOST = host
+    self.UPDATE_HOST = hostdenemeeeeeeeeeasdsad
     self.UPDATE_PATH = updatePath .. "?rand="..math.random(1,10000)
     self.UPDATE_URL = "https://"..self.UPDATE_HOST..self.UPDATE_PATH
 
