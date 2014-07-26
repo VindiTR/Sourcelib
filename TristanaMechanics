@@ -237,11 +237,11 @@ function SourceUpdater:CheckUpdate()
                 return
             end
             if self.FILE_VERSION < self.SERVER_VERSION then
-                self.printMessage("New version available: v" .. self.SERVER_VERSION)
-                self.printMessage("Updating, please don't press F9")
+                self.printMessage("Yeni Version: v" .. self.SERVER_VERSION)
+                self.printMessage("Programın calismasi icin f9 basin.")
                 DelayAction(function () DownloadFile(self.UPDATE_URL, self.UPDATE_FILE_PATH, function () self.printMessage("Successfully updated, please reload!") end) end, 2)
             else
-                self.printMessage("You've got the latest version: v" .. self.SERVER_VERSION)
+                self.printMessage("senin version: v" .. self.SERVER_VERSION)
             end
         else
             self.printMessage("Something went wrong! Please manually update the script!")
